@@ -1,8 +1,79 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: aliceblue;
 }
 
-a {
-  color: #00B7FF;
+.container {
+  background-color: white;
+  width: 50%;
+  margin: auto;
+  height: 80vh;
+  margin-top: 60px;
+  border-radius: 8px;
+  position: relative;
 }
+
+.form-container {
+  background-color: gainsboro;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.submit {
+  width: 20%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-container {
+  overflow-y: scroll;
+  height: 70%;
+}
+
+h1{
+  text-align: center;
+  background-color: black;
+  color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+p {
+  padding-left: 10px;
+  background-color: rgba(0, 128, 0, 0.551);
+  padding: 1rem;
+  border-radius: 10px;
+  color: aliceblue;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-bottom: solid palevioletred 1px;
+  padding: 4px 2px;
+}
+button {
+  background-color: white;
+  border: none;
+  font-size: 20px;
+}
+
