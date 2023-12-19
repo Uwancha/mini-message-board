@@ -1,14 +1,27 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
 
+    .container
 
-  if messages.length
-    ul
-      each messg in messages
-        li
-          h2 #{messg.user} #{messg.added}
-          p #{messg.text}
+      h1= title
+
+      .content-container
+        if messages.length
+          ul
+            each messg in messages
+              li
+                h3 #{messg.user} #{messg.added}
+                p #{messg.text}
+  
+      .form-container
+        form(action='/new', method='post')
+
+          .input
+            input(type='text', name='messageUser', id='user' placeholder='Username' required)
+          
+            input(type='text', name='messageText', id='text'  placeholder='message' required)
+
+          .submit
+            button(type='submit') Send
 
